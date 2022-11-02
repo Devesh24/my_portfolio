@@ -1,38 +1,242 @@
-.App {
-  text-align: center;
+.app{
+    font-family: 'Righteous', cursive;
+    padding: 7rem 0px;
+    flex-wrap: wrap-reverse;
+}
+#about, #projects{
+    background: linear-gradient(to right, #000428 0%, #004e92 100%);
+}
+.heading{
+    color: rgb(255, 149, 0);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* Navbar */
+.title{
+    color: green;
+    font-weight: bolder;
+}
+.navbar-nav li{
+    padding: 1rem 2rem;
+    font-size: large;
+}
+.nav-item{
+    border-radius: 2em;
+}
+.nav-item:hover{
+    box-shadow: 0px 0px 2px 1px #2586e7;
+    transition: box-shadow 1s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+/* Home */
+.intro{
+    font-size: larger;
+}
+.name{
+    font-size: 3rem;
+}
+.fname{
+    color: red;
+}
+.prof{
+    font-size: 1.5rem;
+}
+.work{
+    color: blue;
+}
+.homePic{
+    animation: up-down 1s ease-in-out infinite alternate-reverse both;
+}
+@keyframes up-down{
+    0%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+
+/* About */
+.about{
+    width: 50%;
+    margin: 0px 5rem;
+    background-color: white;
+    transition: box-shadow 1s, background-color 1s, transform 1s;
+}
+.about:hover{
+    box-shadow: 0px 0px 4px 5px rgba(0, 0, 0, 0.5);
+    background-color: #40adf0;
+    transform: scale(1.1);
+    cursor: grab;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+/* Skills */
+.progress{
+    height: 3rem;
+}
+.progress-bar{
+    transition: width 2s;
+}
+.skillName{
+    color: rgba(132, 58, 172, 0.914);
+}
+.card{
+    border-radius: 1rem;
+    width: 20%;
+    min-width: 200px;
+    transition: box-shadow 1.5s;
+}
+.card:hover, .sidebar:hover{
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
+    cursor: grab;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* Projects */
+.proLabel{
+    float: right;
+    width: 100%;
+    max-width: 30%;
+    background-color: white;
+    margin-right: 7vw;
+    transition: box-shadow 1.5s;
+    border-radius: 2rem;
+}
+.proImg{
+    width: 100%;
+    border-radius: 2rem;
+}
+.pro{
+    float: left;
+    transition: box-shadow 1.5s;
+    max-width: 50%;
+    margin-left: 7vw;
+    border-radius: 2rem;
+}
+.carousel-control-prev, .carousel-control-next{
+    width: 6%;
+}
+.proLabel:hover, .pro:hover{
+    box-shadow: 5px 5px 40px rgb(0, 0, 0);
+    cursor: pointer;
+}
+.carousel-item a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Contact */
+#contact{
+    font-family: 'Righteous', cursive;
+    flex-wrap: wrap;
+}
+.cform{
+    width: 55%;
+    font-size: larger;
+    border-radius: 1rem;
+}
+.sidebar{
+    width: 30%;
+    min-width: 317px;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    transition: box-shadow 1.5s;
+}
+ul .data{
+    color: grey;
+}
+
+
+
+
+/* Media Queries */
+@media only screen and (max-width: 1467px) {
+    .proLabel{
+        float: none;
+        margin: 1rem 7vw;
+        max-width: 80%;
+    }
+    .carousel{
+        width: 70%;
+    }
+    .pro{
+        width: 100%;
+        float: none;
+        margin-left: 7vw;
+    }
+    .proImg{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .about{
+        width: 80%;
+        margin: 1rem;
+    }
+    .abtPic{
+        width: 50%;
+        margin-top: 1rem;
+    }
+    .homePic{
+        width: 50%;
+        margin-bottom: 2rem;
+    }
+
+    .proLabel{
+        margin: 1rem 8vw;
+    }
+    .carousel{
+        width: 80%;
+    }
+    .pro{
+        margin-left: 8vw;
+    }
+
+    .cform{
+        width: 90%;
+    }
+    .sidebar{
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .infoIn{
+        width: 100%;
+    }
+
+    .abtPic{
+        width: 60%;
+    }
+    .homePic{
+        width: 60%;
+    }
+
+    .proLabel{
+        margin: 1rem 9.5vw;
+    }
+    .carousel{
+        width: 95%;
+    }
+    .pro{
+        margin-left: 9.5vw;
+    }
+
+    .prof{
+        height: 10vh;
+    }
+}
+@media only screen and (min-width: 425px) and (max-width: 992px) {
+    .title{
+        padding: 1.5rem;
+    }
+    .navbar-toggler{
+        margin-right: 1.5rem;
+    }
 }
