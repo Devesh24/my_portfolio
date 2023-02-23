@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/%20/static/css/main.2428b4fb.css",
-    "main.js": "/%20/static/js/main.7bc659b8.js",
-    "static/js/787.1ed0c42c.chunk.js": "/%20/static/js/787.1ed0c42c.chunk.js",
-    "static/media/landscape.jpg": "/%20/static/media/landscape.e49ed05f23c51b1a00cc.jpg",
-    "static/media/Resume.pdf": "/%20/static/media/Resume.bd2677ff2ae6eb3bd3f3.pdf",
-    "static/media/profile.png": "/%20/static/media/profile.5faf09a7795d28bf5a2b.png",
-    "index.html": "/%20/index.html",
-    "main.2428b4fb.css.map": "/%20/static/css/main.2428b4fb.css.map",
-    "main.7bc659b8.js.map": "/%20/static/js/main.7bc659b8.js.map",
-    "787.1ed0c42c.chunk.js.map": "/%20/static/js/787.1ed0c42c.chunk.js.map"
+    "main.css": "/my-portfolio/static/css/main.f36e4976.css",
+    "main.js": "/my-portfolio/static/js/main.0b914c7b.js",
+    "static/media/bg1.jpg": "/my-portfolio/static/media/bg1.764c542f19e12e322696.jpg",
+    "static/media/ssgyp.png": "/my-portfolio/static/media/ssgyp.947c989b17d83ce4e3b1.png",
+    "static/media/hangman.png": "/my-portfolio/static/media/hangman.48841fce1b58ebc9622f.png",
+    "static/media/devesh2.jpg": "/my-portfolio/static/media/devesh2.2bfad17bf8a1a4c0877c.jpg",
+    "static/media/shopify.png": "/my-portfolio/static/media/shopify.fa222bd0388670300f73.png",
+    "index.html": "/my-portfolio/index.html",
+    "main.f36e4976.css.map": "/my-portfolio/static/css/main.f36e4976.css.map",
+    "main.0b914c7b.js.map": "/my-portfolio/static/js/main.0b914c7b.js.map"
   },
   "entrypoints": [
-    "static/css/main.2428b4fb.css",
-    "static/js/main.7bc659b8.js"
+    "static/css/main.f36e4976.css",
+    "static/js/main.0b914c7b.js"
   ]
 }
