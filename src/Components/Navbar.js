@@ -1,5 +1,4 @@
 import React from "react";
-import AnchorLink from "react-anchor-link-smooth-scroll";
 
 export default function Navbar() {
   return (
@@ -12,29 +11,29 @@ export default function Navbar() {
           <div className="collapse navbar-collapse" id="navbarText">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <AnchorLink className="nav-link" href="#home">
+                <a className="nav-link" href="#home">
                   Home
-                </AnchorLink>
+                </a>
               </li>
               <li className="nav-item">
-                <AnchorLink className="nav-link" href="#about">
+                <a className="nav-link" href="#about">
                   About Me
-                </AnchorLink>
+                </a>
               </li>
               <li className="nav-item">
-                <AnchorLink className="nav-link" href="#skills">
+                <a className="nav-link" href="#skills">
                   Skills
-                </AnchorLink>
+                </a>
               </li>
               <li className="nav-item">
-                <AnchorLink className="nav-link" href="#projects">
+                <a className="nav-link" href="#projects">
                   Projects
-                </AnchorLink>
+                </a>
               </li>
               <li className="nav-item">
-                <AnchorLink className="nav-link" href="#contact">
+                <a className="nav-link" href="#contact">
                   Contact Me
-                </AnchorLink>
+                </a>
               </li>
             </ul>
           </div>
