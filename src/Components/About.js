@@ -1,31 +1,48 @@
 import React from "react";
-import pro from "./profile.png";
+import pro from "./photos/devesh2.jpg";
+import Fade from 'react-reveal/Fade';
 
 export default function About() {
   return (
     <>
       <div className="d-flex flex-column app py-5" id="about">
-        <h1 className="mb-4 ms-5 heading">&lt;About&gt;</h1>
+        <h1 className="heading heading-top">&lt;About Me&gt;</h1>
         <div
-          className="d-flex justify-content-around align-items-center flex-wrap-reverse"
+          className="d-flex justify-content-around align-items-center flex-wrap"
         >
-          <div className="about py-5 px-4 mt-2">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati
-            similique quae saepe dolor iure aperiam amet necessitatibus ducimus,
-            omnis dolores eum nihil reiciendis esse quo molestias id nobis
-            tempora ipsam enim facilis accusantium vel animi. Nesciunt, cumque!
-            Libero distinctio illo sint facilis quae eaque, error perspiciatis
-            ipsum nihil. Accusantium accusamus ab rem, maiores reiciendis magni,
-            rerum fugiat ducimus possimus excepturi doloribus quaerat, nisi id
-            iste error ipsum quis ut in harum debitis doloremque inventore
-            libero! Tempora autem nostrum numquam, harum nobis cum velit quaerat
-            similique dolores, odit veniam, quam rem adipisci natus amet nemo.
-            Doloribus voluptatibus dolore consequuntur soluta quam?
+          <Fade left duration={1500}>
+          <div className="col-lg-3 imgbox">
+            <div className="div-img-bg">
+              <div className="about-img"> 
+                <img src={pro} alt="Profile Pic" width={"80%"} />
+              </div>
+            </div>
           </div>
-
-          <img src={pro} className="abtPic" alt="Profile Pic" width={"30%"} />
+          </Fade>
+          <Fade right duration={1500}>
+          <div className="about py-4">
+            <div className="topIntro">I am Devesh Singh Raghuvanshi, proefficient in Data Structures & Algorithms and have a strong problem solving skills.</div>
+            <div>My Birthplace is Bhopal, Madhya Pradesh and I am currently a B.Tech PreFinal year student at Indian Institute of Information Technology (IIIT) Ranchi specialising in Electronics and Communication Engineering.</div>
+            <div>I am an enthusiastic team player, a fast learner with creative problem-solving skills and good communication skills. I do have an experience in FrontEnd Development and Competitive Programming. I am a huge fan of Cricket and also love to play Chess during spare times.</div>
+            <div>Please do consider visiting some of my Coding Profiles: </div>
+            <div className="codingProfiles">
+              <a className="profilebtn" href="https://leetcode.com/Devesh2403/" target="_blank" rel="noreferrer">
+                <img src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/null/external-level-up-your-coding-skills-and-quickly-land-a-job-logo-shadow-tal-revivo.png" alt="Leetcode" title="Leetcode"/>
+              </a>
+              <a className="profilebtn" href="https://auth.geeksforgeeks.org/user/devesh2403/" target="_blank" rel="noreferrer">
+                <img src="https://img.icons8.com/color/48/null/GeeksforGeeks.png" alt="Geeks For Geeks" title="Geeks For Geeks"/>
+              </a>
+              <a className="profilebtn" href="https://www.codechef.com/users/devesh_2403" target="_blank" rel="noreferrer">
+                <img src="https://img.icons8.com/ios/50/null/codechef.png" alt="Codechef" title="Codechef"/>
+              </a>
+              <a className="profilebtn" href="https://codeforces.com/profile/devesh_2403" target="_blank" rel="noreferrer">
+                <img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/null/external-codeforces-programming-competitions-and-contests-programming-community-logo-color-tal-revivo.png" alt="Codeforces" title="Codeforces"/>
+              </a>
+            </div>
+          </div>
+          </Fade>
         </div>
-        <h1 className="mt-4 ms-5 heading">&lt;/About&gt;</h1>
+        <h1 className="heading heading-bottom">&lt;/About Me&gt;</h1>
       </div>
     </>
   );

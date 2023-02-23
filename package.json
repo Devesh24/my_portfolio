@@ -1,5 +1,5 @@
 {
-  "homepage": "https://Devesh24.github.io/ ",
+  "homepage": "https://Devesh24.github.io/my-portfolio",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -12,6 +12,7 @@
     "react": "^18.2.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^18.2.0",
+    "react-reveal": "^1.2.2",
     "react-router-dom": "^6.4.2",
     "react-scripts": "5.0.1",
     "typed.js": "^2.0.12",

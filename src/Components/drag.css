@@ -1,0 +1,95 @@
+.dragNav{
+    position: absolute;
+    top: 45vh;
+    position: fixed;
+    z-index: 200;
+    right: 20px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dragNav .nav-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-45deg);
+}
+.nav-content .toggle-btn,
+.nav-content span a{
+    height: 3rem;
+    width: 3rem;
+    background-color: #ef4290;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.nav-content .toggle-btn{
+    font-size: 1.3rem;
+    color: white;
+    z-index: 100;
+    cursor: pointer;
+    transform: rotate(45deg);
+    transition: all 0.6s ease;
+}
+.nav-content span{
+    position: absolute;
+    transition: all 0.6s ease;
+    opacity: 0;
+}
+nav.open .nav-content span{
+    opacity: 1;
+}
+.nav-content span a{
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+.nav-content span:hover a{
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    perspective: 1000px;
+}
+.nav-content .toggle-btn:hover{
+    background-color: #f06c9b;
+}
+.nav-content span a i{
+    color: white;
+    transition: 0.5s;
+}
+.nav-content span a:hover i{
+    opacity: 1;
+
+}
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+    
+    30%, 50%, 70% {
+      transform: translate3d(-2px, 0, 0);
+    }
+    40%, 60% {
+      transform: translate3d(2px, 0, 0);
+  }
+}
+
+
+/* Mediaqueries for Tablets ---------- */
+@media only screen and (max-width: 800px) {
+    .dragNav{
+        right: 10px;
+    }
+}
+/* --------------------------- */
+
+/* Mediaqueries for Mobiles ---------- */
+@media only screen and (max-width: 500px) {
+    .dragNav{
+        right: 3px;
+    }
+}
+/* ------------------ */

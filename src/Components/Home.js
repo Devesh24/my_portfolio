@@ -1,8 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import Typed from "typed.js";
-import pro from "./profile.png";
-import resume from "./Resume.pdf";
-import AnchorLink from "react-anchor-link-smooth-scroll";
+import Navbar from "./Navbar";
+import Fade from 'react-reveal/Fade';
 
 export default function Home() {
   const el = useRef(null);
@@ -22,34 +21,59 @@ export default function Home() {
 
   return (
     <>
-      <div
-        className="app d-flex justify-content-around align-items-center"
-        id="home"
-      >
-          <div className="info p-4">
-        <div className="d-flex justify-content-around">
-          <div className="infoIn">
-            <div className="intro">Hey, I am</div>
-            <div className="name">
-              <span className="fname">Devesh</span> Singh Raghuvanshi
+      <div className="main">
+        <Navbar />
+        <div
+          className="app d-flex align-items-center"
+          id="home"
+        >
+          <div className="info">
+            <div className="d-flex justify-content-around">
+              <div className="infoIn">
+                <Fade left duration={1500}>
+                  <div className="intro">Hey, I am</div>
+                  <div className="name">
+                    <span className="fname">Devesh</span> Singh Raghuvanshi
+                  </div>
+                  <div className="prof">
+                    and I am a <span className="work" ref={el}></span>
+                  </div>
+                </Fade>
+              </div>
             </div>
-            <div className="prof">
-              and I am a <span className="work" ref={el}></span>
-            </div>
-            </div>
-        </div>
-            <a href={resume} target="_blank" rel="noreferrer">
-              <button className="btn btn-info p-2 mt-4 mx-3">
-                Downlaod CV
-              </button>
-            </a>
-            <AnchorLink href="#contact">
-              <button className="btn btn-info p-2 mt-4 mx-3">
-                Connect With Me
-              </button>
-            </AnchorLink>
+            <Fade bottom duration={1500}>
+              <div>
+                <a
+                  href="https://drive.google.com/file/d/1vsFRy9uzLPrH9yf9HdcbHcv2fKT5wl_g/view?usp=drivesdk"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button title="Download Resume" className="btn p-1 mt-4">
+                    <i className="fa-solid fa-download"></i>
+                  </button>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/devesh-raghuvanshi-624040239"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button title="Linkedin" className="btn p-1 mt-4">
+                    <i className="fa-brands fa-linkedin-in"></i>
+                  </button>
+                </a>
+                <a
+                  href="https://github.com/Devesh24"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button title="Github" className="btn p-1 mt-4">
+                    <i className="fa-brands fa-github"></i>
+                  </button>
+                </a>
+              </div>
+            </Fade>
           </div>
-        <img className="homePic" src={pro} alt="Profile Pic" width={"30%"} />
+        </div>
       </div>
     </>
   );
