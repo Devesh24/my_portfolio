@@ -12,7 +12,10 @@ export default function ProjectCard(props) {
         </div>
         <div className="proBox">
           {props.project.name}
-          <a title="Deployment" href={props.project.github} className="proLink" target="_blank" rel="noreferrer"><i className="fa-solid fa-link"></i></a>
+          <div>
+            <a title="Deployment" href={props.project.live} className="proLink" target="_blank" rel="noreferrer"><i className="fa-solid fa-link"></i></a>
+            <a title="Github" href={props.project.github} className="proLink gitLink" target="_blank" rel="noreferrer"><i className="fa-brands fa-github"></i></a>
+          </div>
         </div>
       </div>
       </Fade>

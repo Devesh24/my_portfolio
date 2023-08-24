@@ -8,7 +8,7 @@ const Info = () => {
         <div className="sidebar p-3">
           <ul className="conRight">
             <li>
-              Email: <span className="data">devesh25.ugec20@iiitranchi.ac.in</span>
+              Email: <span className="data">deveshraghuvanshi484@gmail.com</span>
             </li>
             <li>
               Phone: <span className="data">+91-8516029236</span>

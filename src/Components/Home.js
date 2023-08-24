@@ -7,7 +7,7 @@ export default function Home() {
   const el = useRef(null);
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["Front End Developer", "Competitive Programmer", "Coder"],
+      strings: ["MERN Stack Developer", "Competitive Programmer", "Coder"],
       startDelay: 1000,
       typeSpeed: 100,
       backSpeed: 60,
