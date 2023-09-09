@@ -43,11 +43,11 @@ export const sayings = [
 
 export const myProjects = [
   {
-    name: "Dynamic School Website",
+    name: "Freelance School Website",
     photo: project5,
     id: 0,
-    live: "",
-    github: "",
+    live: "https://millenniummodelschool.tech",
+    overview: "https://docs.google.com/presentation/d/1d879x1ZVC_DREHd7gAai-on2bWq3lS8O/edit?usp=sharing&ouid=102080725498943942809&rtpof=true&sd=true"
   },
   {
     name: "MoneyMate - Expense Tracker",

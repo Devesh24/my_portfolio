@@ -30,15 +30,6 @@ const Info = () => {
               Socials:
               <div className="d-flex mt-2">
                 <a
-                  title="Twitter"
-                  className="btn btn-primary mx-3"
-                  href="https://twitter.com/Devesh240301"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <i className="fa-brands fa-twitter"></i>
-                </a>
-                <a
                   title="Github"
                   className="btn btn-dark mx-3"
                   href="https://github.com/Devesh24"
@@ -55,6 +46,15 @@ const Info = () => {
                   rel="noreferrer"
                 >
                   <i className="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a
+                  title="Twitter"
+                  className="btn btn-primary mx-3"
+                  href="https://twitter.com/Devesh240301"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="fa-brands fa-twitter"></i>
                 </a>
               </div>
             </li>

@@ -14,7 +14,8 @@ export default function ProjectCard(props) {
           {props.project.name}
           <div>
             <a title="Deployment" href={props.project.live} className="proLink" target="_blank" rel="noreferrer"><i className="fa-solid fa-link"></i></a>
-            <a title="Github" href={props.project.github} className="proLink gitLink" target="_blank" rel="noreferrer"><i className="fa-brands fa-github"></i></a>
+            {props.project.id>0 && <a title="Github" href={props.project.github} className="proLink gitLink" target="_blank" rel="noreferrer"><i className="fa-brands fa-github"></i></a>}
+            {props.project.id==0 && <a title="Overview" href={props.project.overview} className="proLink gitLink" target="_blank" rel="noreferrer"><i className="fa-solid fa-file-powerpoint"></i></a>}
           </div>
         </div>
       </div>
